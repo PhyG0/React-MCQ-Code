@@ -1,0 +1,128 @@
+body {
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f0f0f0;
+}
+
+.container {
+  background-color: #333333;
+  width: 80%; /* Fixed width container */
+  max-width: 1200px; /* Maximum width */
+  min-width: 1000px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px; /* Add margin for spacing */
+}
+
+.container .header {
+  border: 2px solid rgba(50, 50, 50, 0.5);
+  background-color: #444444;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.options button {
+  width: 100%; /* Button width takes full width of container */
+  max-width: 700px; /* Max width for larger screens */
+  min-width: 500px; /* Min width for smaller screens */
+  padding: 1rem;
+  font-size: large;
+  margin: 0.5rem 0;
+  border: none;
+  background-color: #555555;
+  color: #ffffff;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.navigation button {
+  flex: 1;
+  padding: 1rem;
+  font-size: large;
+  background-color: #2e8b57;
+  color: #d3d3d3;
+}
+
+.submit {
+  width: 100%; /* Submit button takes full width of container */
+  padding: 1rem;
+  font-size: large;
+  margin-top: 2rem;
+  background-color: #483d8b;
+  color: #d3d3d3;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #f0f0f0;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+
+.result button {
+  font-size: large;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #555555;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: auto;
+  }
+
+  .options button {
+    width: 90%;
+    padding: 1rem;
+    font-size: large;
+    margin: 0.5rem 0;
+    min-width: 300px; /* Adjust min width for smaller screens */
+  }
+
+  .navigation button {
+    padding: 1rem;
+    font-size: large;
+  }
+
+  .submit {
+    width: 90%;
+    padding: 1rem;
+    font-size: large;
+    margin-top: 2rem;
+  }
+
+  .container {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
